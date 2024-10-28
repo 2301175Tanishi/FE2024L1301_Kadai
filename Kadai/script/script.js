@@ -28,7 +28,7 @@ new Vue({
         },
         reset() {
             this.num = 0;
-            this.count =0;
+            this.count = 0;
             imageChange();
         },
         imageChange() {
