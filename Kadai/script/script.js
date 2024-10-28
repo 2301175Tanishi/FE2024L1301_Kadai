@@ -18,11 +18,11 @@ new Vue({
             
         },
         kake() {
-            this.num *= count;
+            this.num *= this.count;
             
         },
         waru() {
-            this.num /= count;
+            this.num /= this.count;
             
         },
         reset() {
