@@ -12,7 +12,7 @@ new Vue({
            現在の数に応じて表示する画像を変更するメソッドを準備する */
         tasu() {
                 this.num += this.count;
-                this.documentimageChange();
+                this.imageChange();
         },
         hiku() {
             this.num -= this.count;
