@@ -4,18 +4,17 @@ new Vue({
     data() {
         return {
             //「現在の数」表示用データ，「計算用の数」取得用データを準備する（2行）
-            now:0,count:0
+            num:0,count:1
         };
     },
     methods: {
         /* ボタン押下時に動作するメソッドを準備する（たす、ひく、かける、わる、リセット）
            現在の数に応じて表示する画像を変更するメソッドを準備する */
         tasu() {
-                this.num += count;
-            
+                this.num += this.count;
         },
         hiku() {
-            this.num -= count;
+            this.num -= this.count;
             
         },
         kake() {
@@ -27,7 +26,7 @@ new Vue({
             
         },
         reset() {
-            this.num = 0;
+            this.num,count = 0;
             
         },
         imageChange() {
