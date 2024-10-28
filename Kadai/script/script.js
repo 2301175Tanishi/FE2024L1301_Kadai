@@ -12,24 +12,24 @@ new Vue({
            現在の数に応じて表示する画像を変更するメソッドを準備する */
         tasu() {
                 this.num += this.count;
-                imageChange();
+                this.documentimageChange();
         },
         hiku() {
             this.num -= this.count;
-            imageChange();
+            this.imageChange();
         },
         kake() {
             this.num *= this.count;
-            imageChange();
+            this.imageChange();
         },
         waru() {
             this.num /= this.count;
-            imageChange();
+            this.imageChange();
         },
         reset() {
             this.num = 0;
             this.count = 0;
-            imageChange();
+            this.imageChange();
         },
         imageChange() {
             //HTMLからimage_areaの情報を取得する
