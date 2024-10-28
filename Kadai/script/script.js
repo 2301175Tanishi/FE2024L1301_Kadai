@@ -31,13 +31,13 @@ new Vue({
             var mydiv = document.getElementById("image_area");
             console.log(mydiv.innerHTML);
             //現在の数が0の場合「hime1.jfif」をimage_areaに表示する（<img src="./img/hime1.jfif" width="300">）
-            if(num == 0){
+            if(this.num == 0){
                 <img src="./img/hime1.jfif" width="300"></img>;
             //現在の数が3の倍数かつ5の倍数の場合「hime3.png」をimage_areaに表示する（<img src="./img/hime3.png" width="300">）
-            }else if(num / 3 == 0 && num / 5 ==0){
+            }else if(this.num % 3 == 0 && num / 5 ==0){
                 <img src="./img/hime3.png" width="300"></img>
             //現在の数が3の倍数または5の倍数の場合「hime2.jfif」をimage_areaに表示する（<img src="./img/hime2.jfif" width="300">）
-            }else if(num / 3 == 0 || num / 5 == 0){
+            }else if(this.num % 3 == 0 || num / 5 == 0){
                 <img src="./img/hime2.jfif" width="300"></img>
             //上記以外の場合「hime1.jfif」をimage_areaに表示する（<img src="./img/hime1.jfif" width="300">）
             }else{
