@@ -11,23 +11,23 @@ new Vue({
         /* ボタン押下時に動作するメソッドを準備する（たす、ひく、かける、わる、リセット）
            現在の数に応じて表示する画像を変更するメソッドを準備する */
         tasu() {
-                this.
+                this.num += count;
             
         },
         hiku() {
-            
+            this.num -= count;
             
         },
         kake() {
-            
+            this.num *= count;
             
         },
         waru() {
-            
+            this.num /= count;
             
         },
         reset() {
-            
+            this.num = 0;
             
         },
         imageChange() {
